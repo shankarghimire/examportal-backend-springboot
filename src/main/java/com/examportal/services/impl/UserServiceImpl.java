@@ -37,6 +37,7 @@ public class UserServiceImpl implements UserService{
 				this.roleRepository.save(userRole.getRole());
 			}
 			
+			
 			user.getUserRoles().addAll(userRoles);
 			
 			tempUser = this.userRepository.save(user);
